@@ -1,6 +1,22 @@
+Plan:
+
+- Remove the Installation section from the README.
+
 # YouTube Clone - HTML & CSS Practice Project
 
-This is a simple frontend clone of the YouTube homepage created using HTML and CSS. The project was developed as a practice exercise to improve web development skills, particularly in structuring layouts and styling with CSS.
+A frontend clone of the YouTube homepage created using HTML and CSS. This project serves as a practice exercise to improve web development skills, particularly in structuring layouts and styling with CSS.
+
+## Table of Contents
+
+- Features
+- Technologies Used
+- Getting Started
+  - Prerequisites
+  - Usage
+- Project Structure
+- Learning Outcomes
+- Acknowledgements
+- Disclaimer
 
 ## Features
 
@@ -11,7 +27,7 @@ This is a simple frontend clone of the YouTube homepage created using HTML and C
 
 ## Technologies Used
 
-- **HTML5**: Markup language for structuring the content.
+- **HTML5**: Markup language for structuring content.
 - **CSS3**: Styling and layout, utilizing Flexbox for alignment.
 
 ## Getting Started
@@ -19,24 +35,50 @@ This is a simple frontend clone of the YouTube homepage created using HTML and C
 ### Prerequisites
 
 - Web browser (e.g., Chrome, Firefox, Edge)
-- Code editor (optional, for viewing/editing code)
+- Code editor (optional, for viewing or editing code)
 
+### Usage
+
+- Open 
+
+index.html
+
+ in your web browser to view the project.
 
 ## Project Structure
+
+```
+YouTube-Clone/
+├── assets/
+│   ├── icons/
+│   │   ├── menu.png
+│   │   ├── search.png
+│   │   └── ...
+│   ├── Thumbnails/
+│   │   ├── video1.png
+│   │   ├── video2.png
+│   │   └── ...
+│   ├── Channel_Logo/
+│   │   ├── channel_logo.png
+│   │   ├── channel2_logo.jpeg
+│   │   └── ...
+│   └── ...
+├── index.html
+└── style.css
+```
 
 - 
 
 index.html
 
-: Main HTML file with the structure of the web page.
+: Main HTML file with the structure of the webpage.
 - `style.css`: CSS file containing styles and layout.
 - `assets/`: Directory with images and icons used in the project.
-
 
 ## Learning Outcomes
 
 - Practiced HTML5 semantic elements for better accessibility.
-- Utilized CSS Flexbox for creating responsive layouts.
+- Utilized CSS Flexbox and media queries for creating responsive layouts.
 - Gained experience in cloning a website design.
 - Improved understanding of aligning and styling elements.
 
