@@ -10,9 +10,6 @@ A frontend clone of the YouTube homepage created using HTML and CSS. This projec
 
 - Features
 - Technologies Used
-- Getting Started
-  - Prerequisites
-  - Usage
 - Project Structure
 - Learning Outcomes
 - Acknowledgements
@@ -30,20 +27,6 @@ A frontend clone of the YouTube homepage created using HTML and CSS. This projec
 - **HTML5**: Markup language for structuring content.
 - **CSS3**: Styling and layout, utilizing Flexbox for alignment.
 
-## Getting Started
-
-### Prerequisites
-
-- Web browser (e.g., Chrome, Firefox, Edge)
-- Code editor (optional, for viewing or editing code)
-
-### Usage
-
-- Open 
-
-index.html
-
- in your web browser to view the project.
 
 ## Project Structure
 
