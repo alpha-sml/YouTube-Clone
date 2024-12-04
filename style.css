@@ -1,9 +1,17 @@
+/*--------------------
+ * YouTube Clone CSS
+ * Author: Atharva Sharma
+ * Last Updated: 04/12/2024
+ *--------------------*/
+
 body {
     margin: 0;
     padding: 0;
     background-color: #ffffff;
 }
 
+/* Header Styles */
+/* Contains: logo, search bar, and action icons */
 header.header {
     height: 56px;
     background-color: #ffffff;
@@ -74,7 +82,6 @@ header.header {
     background: #f0f0f0;
 }
 
-
 .icons {
     display: flex;
     gap: 20px;
@@ -97,6 +104,8 @@ header.header {
     height: 24px;
 }
 
+/* Sidebar Navigation */
+/* Contains: navigation menu with icons */
 .container {
     display: flex;
     margin-top: 56px;
@@ -135,6 +144,8 @@ aside.sidebar {
     height: 24px;
 }
 
+/* Main Content Area */
+/* Contains: video grid layout */
 .content {
     flex: 1;
     padding: 20px 40px;
@@ -148,6 +159,8 @@ aside.sidebar {
     gap: 40px 20px;
 }
 
+/* Video Card Components */
+/* Contains: thumbnail, duration, channel info */
 .video-item {
     cursor: pointer;
     padding: 10px;
@@ -163,12 +176,17 @@ aside.sidebar {
     position: relative;
     width: 100%;
     border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .thumbnail img {
     width: 100%;
     aspect-ratio: 16/9;
     border-radius: 12px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.02);
 }
 
 .duration {
@@ -199,10 +217,75 @@ aside.sidebar {
     font-size: 16px;
     line-height: 1.4;
     color: #0f0f0f;
+    max-height: 2.8em;
+    overflow: hidden;
 }
 
+/* Text Truncation Styles */
+/* Controls text overflow in titles and descriptions */
 .channel-name, .stats {
     color: #606060;
     font-size: 14px;
     margin: 4px 0;
+}
+
+.channel-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Responsive Design */
+/* Breakpoints for different screen sizes */
+
+/* Desktop (3 columns) */
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet (2 columns) */
+@media (max-width: 999px) and (min-width: 750px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .content {
+        padding: 20px 24px;
+    }
+}
+
+/* Mobile (1 column) */
+@media (max-width: 749px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content {
+        padding: 16px;
+        margin-left: 0;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+    
+    .search {
+        display: none;
+    }
+    
+    .header {
+        padding: 0 8px;
+    }
+    
+    .logo img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    .icons {
+        gap: 12px;
+    }
 }
