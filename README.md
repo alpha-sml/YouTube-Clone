@@ -1,7 +1,3 @@
-Plan:
-
-- Remove the Installation section from the README.
-
 # YouTube Clone - HTML & CSS Practice Project
 
 A frontend clone of the YouTube homepage created using HTML and CSS. This project serves as a practice exercise to improve web development skills, particularly in structuring layouts and styling with CSS.
